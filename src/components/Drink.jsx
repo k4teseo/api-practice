@@ -49,7 +49,8 @@ function Drink(drink) {
         <StyledDiv>
             <StyledHeader>{drink.name}</StyledHeader>
             <StyledImage src={drink.image} alt={drink.alt}/>
-            <StyledInfo>Glass: {drink.glass}</StyledInfo>
+            <StyledInfo>Glass:</StyledInfo>
+            <StyledP>{drink.glass}</StyledP>
             <StyledInfo>Ingredients:</StyledInfo>
             <StyledOL>
               {drink.ingredient1 && <li>{drink.measure1} {drink.ingredient1}</li>}
